@@ -9,3 +9,4 @@ coverage
 *.log
 yarn.lock
 dist/
+accordion-list-populator/src/docs/
