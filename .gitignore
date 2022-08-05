@@ -10,3 +10,4 @@ coverage
 yarn.lock
 dist/
 accordion-list-populator/src/docs/
+accordion-list-populator/typedocs/
