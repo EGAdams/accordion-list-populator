@@ -32,15 +32,11 @@ export default class OriginalQueryRunner implements IQueryRunner, ITestable {
      * @memberof OriginalQueryRunner
      */
     async runQuery ( apiArguments: IApiArgs ): Promise< void > {
-        const queryResults = await axios.get( this.url, { params: { sql: apiArguments.query } } );
+        const queryResults = await axios.get( this.url, { params: { sql: apiArguments.query }});
         apiArguments.queryResultProcessor.processQueryResult( queryResults );
     }
 
-    testMe (): void {
-        console.log( 'testing OriginalQueryRunner...' );
-        // const test = new OriginalQueryRunnerTest( this );
-        // test.run();
-    }
+    testMe (): void { console.log( 'testing OriginalQueryRunner...' ); }
 }
 
 if ( typeof process != "undefined" ) {  // node runner.js testMe

@@ -1,6 +1,6 @@
 {
-  "name": "log-object-processor",
-  "version": "1.0.27",
+  "name": "accordion-list-populator",
+  "version": "0.0.1",
   "description": "Controls an internal Q for processing logs.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",

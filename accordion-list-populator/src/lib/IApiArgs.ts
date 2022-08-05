@@ -6,7 +6,6 @@ interface IApiArgs {
     data: unknown;
     queryResultProcessor: IQueryProcessor;
     query: string;
-    thisObject: unknown;
 }
 
 export default IApiArgs;
