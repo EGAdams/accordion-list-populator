@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
     "incremental": true,
     "target": "es2017",
     "outDir": "build/main",
@@ -7,7 +8,7 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "declaration": true,
-    "inlineSourceMap": true,
+    //  "inlineSourceMap": true,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     "resolveJsonModule": true /* Include modules imported with .json extension. */,
 

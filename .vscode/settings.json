@@ -3,6 +3,8 @@
         "hardwrap",
         "pkief",
         "Populator",
-        "tsdoc"
+        "populators",
+        "tsdoc",
+        "xmlhttprequest"
     ]
 }

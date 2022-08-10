@@ -20,5 +20,6 @@ export default class DataSource {
                 console.log( "*** ERROR: dataArg: " + dataArg + " ***" );
             }
             //jQuery( document ).trigger( /* event */ apiArgs.trigger, /* event arguments */ apiArgs );
+            apiArgs.queryResultProcessor.processQueryResult( apiArgs.data );
         }); }
 }

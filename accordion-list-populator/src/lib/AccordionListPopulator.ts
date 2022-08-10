@@ -4,19 +4,20 @@ import OriginalQueryRunner from './OriginalQueryRunner';
 export class AccordionListPopulator {
     url: string;
     accordion_list: Array< string >;
-    constructor( url: string ) {
-        this.url = "http://mycustombusinessapp.com/wp-content/plugins/MCBA-Wordpress/runQuery.php";
+    constructor( urlArg: string ) {
+        this.url = urlArg;
+        this.url = "https://mycustombusinessapp.com/wp-content/plugins/MCBA-Wordpress/runRawQuery.php";
         this.accordion_list = [];
-        console.log( "initializing channel " + url + "..." );
-    }
+        console.log( "initializing channel " + this.url + "..." ); }
+
     populate() {
-        const dataSource = new OriginalQueryRunner();
+        console.log( "constructing data source..." );
+        const dataSource = new OriginalQueryRunner( this.url );
         dataSource.runQuery({
-            query: "select object_view_id from monitored_objects;",
+            query: "select object_view_id from monitored_objects",
             queryResultProcessor: new AccordionListPopulatorResultProcessor( this ),
             data: {},
-        });
-    }
+        }); }
+
+    getAccordionList(): Array< string > { return this.accordion_list; }
 }
-
-

@@ -1,11 +1,11 @@
 {
-  "name": "accordion-list-populator",
-  "version": "0.0.1",
-  "description": "Controls an internal Q for processing logs.",
+  "name": "list-populator",
+  "version": "0.0.27",
+  "description": "Populates lists.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/EGAdams/log-object-processor",
+  "repository": "https://github.com/EGAdams/accordion_list_populator",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -46,7 +46,9 @@
     "@bitauth/libauth": "^1.17.1",
     "axios": "^0.27.2",
     "jquery": "^3.6.0",
-    "tsdoc": "0.0.4"
+    "tsdoc": "0.0.4",
+    "xhr2": "^0.2.1",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",

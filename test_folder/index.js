@@ -1,7 +1,5 @@
 'use strict';
-const { Tester } = require( "../accordion-list-populator/build/main/lib/Tester" );
-const { AccordionListPopulator } = require( "../accordion-list-populator/build/main/lib/AccordionListPopulator" );
-let processor = new AccordionListPopulator( ) 
+const { Tester } = require( "./node_modules/list-populator/build/main/lib/Tester" );
 console.log( "creating new tester..." );
 const tester = new Tester([ "AccordionListPopulatorTest" ]);
 console.log( "tester created." );
